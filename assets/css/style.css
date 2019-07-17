@@ -3,6 +3,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 25vh;
+}
+#quiz-container {
+    padding: 10px;
     border: thin solid black;
-
 }
