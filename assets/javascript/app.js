@@ -162,11 +162,11 @@ startTheGame.on("click",startGame);
 // showing question
 function showQuestion(){
     let q = questions[checkingQuestion];
-    questionShow.html('<h2>'+ q.question + '</h2>');
-    A.html(q.A);
-    B.html(q.B);
-    C.html(q.C);
-    D.html(q.D);
+    questionShow.html('<h3>'+ q.question + '</h3>');
+    A.html('<p>' + q.A + '</p>');
+    B.html('<p>' + q.B + '</p>');
+    C.html('<p>' + q.C + '</p>');
+    D.html('<p>' + q.D + '</p>');
 };
 
 //check the answer

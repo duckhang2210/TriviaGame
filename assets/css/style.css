@@ -1,10 +1,50 @@
+body{
+    background-image: url(../images/back.jpg);
+    background-size: 100%;
+}
+header {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+header img{
+    width: 200px;
+}
 #main-container {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25vh;
+    margin-top: 15vh;
+    text-align: center;
+    background-color: #f7f1e5;
 }
+#start h1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    border: thin solid black;
+    color: yellow;
+    background-color: red;
+}
+#start h1:hover{
+    background-color: yellow;
+    color: red;
+}
+
 #quiz-container {
     padding: 10px;
     border: thin solid black;
+}
+#answer img {
+    width: 400px;
+    height: 350px;
+}
+.choice p{
+    color: black;
+    border: thin solid teal;
+    background: blanchedalmond;
+    width: 300px;
+    height: 30px;
+    margin: 20px auto;
 }
