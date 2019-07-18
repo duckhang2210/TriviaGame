@@ -16,12 +16,13 @@ var totalScore = $('#totalScore');
 // Create questions
 var questions = [
     {
-        question: "Ant-Man has had a number of incarnations. Which of these was his first?",
+        question: "Who was the first Ant-Man?",
         A: "Scott Lang",
         B: "Eric O'Grady",
         C: "Mick Taylor",
         D: "Hank Pym",
         correct: "D",
+        fact: "D: Hank Pym was the first Ant-Man",
         pic: "Hank Pym.jpg"
     },
     {
@@ -31,15 +32,17 @@ var questions = [
         C: "Charles Xavier",
         D: "Taylor Swift",
         correct: "A",
+        fact: "A: Kurt Wagner is Nightcrawler's real name",
         pic: "Kurt Wagner.jpg"
     },
     {
-        question: "What is the Avenger known as Hawkeye's real name?",
+        question: "What is the Hawkeye's real name?",
         A: "Natty Bumppo",
         B: "Clint Barton",
         C: "Oliver Queen",
         D: "Robin Hood",
         correct: "B",
+        fact: "B: Clint Barton is his real name",
         pic: "Clint Barton.jpg"
     },
     {
@@ -49,6 +52,7 @@ var questions = [
         C: "Doctor Strange",
         D: "The Galactus",
         correct: "A",
+        fact: "A: Scarlett Witch almost brought the extinction to the Mutants with only THREE FREAKING WORDS.",
         pic: "Scarlett Witch.jpg"
     },
     {
@@ -58,6 +62,7 @@ var questions = [
         C: "Australian",
         D: "Mexican",
         correct: "A",
+        fact: "A: the wild from Canada",
         pic: "Canadian.jpg"
     },
     {
@@ -67,6 +72,7 @@ var questions = [
         C: "Scarif",
         D: "Asgard",
         correct: "A",
+        fact: "A: the worst dad ever is from Spartax",
         pic: "Spartax.jpg"
     },
     {
@@ -76,6 +82,7 @@ var questions = [
         C: "Jane Foster",
         D: "Mary Jane",
         correct: "C",
+        fact: "C: Jane Foster,Thor's cancer girlfriend",
         pic: "Jane Foster.jpg"
     },
     {
@@ -85,6 +92,7 @@ var questions = [
         C: "The New York Times",
         D: "The Avenger",
         correct: "B",
+        fact: "B: Spider-Man worked at the place where its boss is the biggest anti-fan of Spider-Man",
         pic: "The Daily Bugle.jpg"
     },
     {
@@ -94,6 +102,7 @@ var questions = [
         C: "Juggernaut",
         D: "P.Xavier",
         correct: "C",
+        fact: "C: when you need a wheelchair and your step-brother is one of the strongest men",
         pic: "Juggernault.jpg"
     },
     {
@@ -103,6 +112,7 @@ var questions = [
         C: "A magician",
         D: "A special effects artist",
         correct: "D",
+        fact: "D: althought he has no power at all, he was still able to cause many deadly trouble to Spider-Man",
         pic: "Mysterio.jpg"
     },
     {
@@ -112,6 +122,7 @@ var questions = [
         C: "Reed Richards",
         D: "Bruce Banner",
         correct: "C",
+        fact: "C: Doom, one of the most powerful villian, and Reed, one of the smartest brain used to be close friends",
         pic: "Reed Richard.jpg"
     },
     {
@@ -121,6 +132,7 @@ var questions = [
         C: "Dr. Otto",
         D: "J. Jonah Jameson",
         correct: "D",
+        fact: "D: J.J. Jameson, Peter Parker's boss, created one of the most deadliest enemy for his employee",
         pic: "Scorpion.jpg"
     },
     {

@@ -15,7 +15,7 @@ header img{
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15vh;
+    margin-top: 10vh;
     text-align: center;
     background-color: #f7f1e5;
 }
@@ -42,9 +42,18 @@ header img{
 }
 .choice p{
     color: black;
-    border: thin solid teal;
-    background: blanchedalmond;
+    border: thin solid black;
+    background: yellow;
     width: 300px;
     height: 30px;
     margin: 20px auto;
+}
+.choice p:hover{
+    color: yellow;
+    border: thin solid black;
+    background-color: red;
+    width: 310px;
+}
+a:hover {
+    text-decoration: none;
 }
