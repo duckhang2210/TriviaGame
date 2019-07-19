@@ -15,7 +15,9 @@
   <body>
         <header><img src="assets/images/logo.png"></header>
         <div id="main-container">
-            <div id="start" style="display: block"><h1>Start Quiz</h1></div>
+
+            <div id="start" class="startGame" style="display: block"><h1>Start Quiz</h1></div>
+            
             <div id="quiz-container">
               <div id="question"></div>
               <div id="choices">
@@ -28,16 +30,21 @@
             <div id="answer" style="display: none">
                 
             </div>
-            <div id="timer">
-              <div id="counter"></div>
-            </div>
-            <div id="scoreBoard">0</div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <div id="result">
-              <div id="totalScore"></div>
-              <div id="reset" onclick="startGame()">Reset</div>
+            <div id="countdown" style="display: none">
+                <div id="countdown-number"></div>
+                <svg>
+                  <circle r="18" cx="20" cy="20"></circle>
+                </svg>
+              </div>
+            <div id="currentQuestion"></div>
+            
+            <div id="result" style="display: none">
+              <div id="totalScore">
+                <h3><span>Right answer:</span><span id="rightanswer"></span></h3>
+                <h3><span>Wrong answer:</span><span id="wronganswer"></span></h3>
+                
+              </div>
+              <div id="reset" class="startGame" onclick="startGame()">Reset</div>
             </div>
         </div>
 

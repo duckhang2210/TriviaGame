@@ -19,7 +19,7 @@ header img{
     text-align: center;
     background-color: #f7f1e5;
 }
-#start h1{
+.startGame h1{
     margin-left: auto;
     margin-right: auto;
     width: 250px;
@@ -27,7 +27,7 @@ header img{
     color: yellow;
     background-color: red;
 }
-#start h1:hover{
+.startGame h1:hover{
     background-color: yellow;
     color: red;
 }
@@ -57,3 +57,49 @@ header img{
 a:hover {
     text-decoration: none;
 }
+
+
+#countdown {
+    position: relative;
+    margin: auto;
+
+    height: 40px;
+    width: 40px;
+    text-align: center;
+  }
+  
+  #countdown-number {
+    color: red;
+    display: inline-block;
+    line-height: 40px;
+    
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+  }
+  
+  svg circle {
+    
+    stroke-dasharray: 113px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: red;
+    fill: none;
+    animation: countdown 21s linear infinite forwards;
+  }
+  
+  @keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 113px;
+    }
+  }
