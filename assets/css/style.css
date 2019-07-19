@@ -57,6 +57,10 @@ header img{
 a:hover {
     text-decoration: none;
 }
+#percent {
+
+  color: red;
+}
 
 
 #countdown {

@@ -10,6 +10,7 @@ var showAnswer = $('#answer');
 var counter = $('#countdown-number');
 
 
+
 var currentQuestion = $('#currentQuestion');
 var result = $('#result');
 var totalScore = $('#totalScore');
@@ -159,9 +160,11 @@ var countDown;
 var score;
 var wrong = 0;
 var timeout;
+var percent;
 //Start Game
 function startGame(){
     clearInterval(timeout);
+    countDown= clearInterval(showingTimer);
     checkingQuestion = 0;
     score = 0;
     count = 20;
@@ -170,7 +173,7 @@ function startGame(){
     startTheGame.css('display', 'none');
     quiz.css('display', 'block');
     currentQuestion.css('style', 'block');
-    currentQuestion.html("1/"+ questions.length);
+    currentQuestion.html(checkingQuestion+1+"/"+ questions.length);
     $('#countdown').css('display', 'none');
     showQuestion();
     $('#countdown').css('display', 'block');
@@ -199,6 +202,9 @@ function checkAnswer(answer){
         $('#countdown').css('display', 'none');
         quiz.css('display', 'none');
         showAnswer.css('display','block');
+        showAnswer.css('background-color','#e0f9fe');
+        showAnswer.css('color','#ff7417');
+        showAnswer.css('border','thick solid black');
         timeout = setInterval(nextQuestion,4000);    
     }
     //wrong
@@ -207,6 +213,9 @@ function checkAnswer(answer){
         $('#countdown').css('display', 'none');
         quiz.css('display', 'none');
         showAnswer.css('display','block');
+        showAnswer.css('background-color','red');
+        showAnswer.css('color','yellow');
+        showAnswer.css('border','thick solid yellow');
         wrong ++;
         
         timeout = setInterval(nextQuestion,4000);
@@ -222,16 +231,19 @@ function nextQuestion(){
         quiz.css('display', 'block');
         showAnswer.css('display','none');
         showQuestion();
-        currentQuestion.html(checkingQuestion+"/"+ questions.length);
+        currentQuestion.html(checkingQuestion + 1 +"/"+ questions.length);
         showingTimer();
     } else {
         clearInterval(timeout);
         countDown= clearInterval(showingTimer);
+        percent = Math.round(100 * score/questions.length);
+        $('#percent').html(percent+'%');
         showAnswer.css('display', 'none');
         result.css('display', 'block');
         currentQuestion.css('display', 'none');
         $('#rightanswer').html(score);
         $('#wronganswer').html(wrong);
+
     };
 };
 
@@ -251,6 +263,9 @@ function showingTimer(){
         $('#countdown').css('display', 'none');
         quiz.css('display', 'none');
         showAnswer.css('display','block');
+        showAnswer.css('background-color','black');
+        showAnswer.css('color','red');
+        showAnswer.css('border','thick solid darksalmon');
         timeout = setInterval(nextQuestion,4000);
         count = 20;
     };
