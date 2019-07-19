@@ -188,7 +188,7 @@ function checkAnswer(answer){
         score ++;
         scoreBoard.html(score);
         //show the correct alert and the picture for right answer 
-        showAnswer.html('<h1>Correct!!!!!!</h1><br><img src="assets/images/'+ questions[checkingQuestion].pic + '">');
+        showAnswer.html('<h1>Correct!!!!!!</h1><p>'+questions[checkingQuestion].fact+'</p><br><img src="assets/images/'+ questions[checkingQuestion].pic + '">');
         $('#timer').css('display', 'none');
         quiz.css('display', 'none');
         showAnswer.css('display','block');
