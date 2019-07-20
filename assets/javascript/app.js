@@ -177,7 +177,7 @@ function startGame(){
     $('#countdown').css('display', 'none');
     showQuestion();
     $('#countdown').css('display', 'block');
-    countDown(showingTimer);
+    countItDown(showingTimer);
 };
 startTheGame.on("click",startGame);
 
@@ -248,7 +248,7 @@ function nextQuestion(){
 };
 
 //Count down from 20;
-function countDown(showingTimer){
+function countItDown(showingTimer){
 clearInterval(showingTimer);
 setInterval(showingTimer,1000);
 };
