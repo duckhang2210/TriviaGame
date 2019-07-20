@@ -123,10 +123,28 @@ a:hover {
       width: 960px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 10vh;
+      margin-top: 5vh;
       text-align: center;
       background-color: #f7f1e5;
   }
+  #answer img {
+    width: 400px;
+    height: 350px;
+}
+  .choice p{
+    color: black;
+    border: thin solid black;
+    background: yellow;
+    width: 70%;
+    height: 50px;
+    margin: 20px auto;
+}
+.choice p:hover{
+    color: yellow;
+    border: thin solid black;
+    background-color: red;
+    width: 75%;
+}
   
   }
   @media screen and (max-width: 768px) {
@@ -140,13 +158,31 @@ a:hover {
       width: 200px;
   }
   #main-container {
-      width: 960px;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 10vh;
+      margin-top: 3vh;
       text-align: center;
       background-color: #f7f1e5;
   }
+  #answer img {
+    width: 300px;
+    height: 200px;
+}
+  .choice p{
+    color: black;
+    border: thin solid black;
+    background: yellow;
+    width: 70%;
+    height: 50px;
+    margin: 20px auto;
+}
+.choice p:hover{
+    color: yellow;
+    border: thin solid black;
+    background-color: red;
+    width: 75%;
+}
   
   }
   @media screen and (max-width: 680px) {
@@ -160,13 +196,27 @@ a:hover {
       width: 200px;
   }
   #main-container {
-      width: 90%px;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 10vh;
+      margin-top: 2vh;
       text-align: center;
       background-color: #f7f1e5;
   }
+  .choice p{
+    color: black;
+    border: thin solid black;
+    background: yellow;
+    width: 70%;
+    height: 50px;
+    margin: 20px auto;
+}
+.choice p:hover{
+    color: yellow;
+    border: thin solid black;
+    background-color: red;
+    width: 75%;
+}
   
   }
   @media screen and (max-width: 320px) {
@@ -183,7 +233,7 @@ a:hover {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 10vh;
+      margin-top: 1vh;
       text-align: center;
       background-color: #f7f1e5;
   }
